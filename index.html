@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Toothwise by Dr Osama Razzaq | Dentist in Rawalpindi</title>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B1B3A',
+              teal: '#2CB5C9',
+              tealLight: '#E8F8FA',
+              tealDark: '#1E8E9F',
+              accentRed: '#D7263D',
+              accentRedHover: '#B81E31',
+              cardBg: '#FFFFFF',
+              surface: '#F8FAFC'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(11, 27, 58, 0.06)',
+            'glow': '0 0 35px -5px rgba(44, 181, 201, 0.35)',
+            'glow-red': '0 10px 25px -5px rgba(215, 38, 61, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">
+    .gradient-teal-glow {
+      background: radial-gradient(circle at center, rgba(44, 181, 201, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    .insta-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased selection:bg-[#2CB5C9] selection:text-white pb-20 md:pb-0">
+<!-- BEGIN: StickyHeader -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300 shadow-sm" data-purpose="main-navigation-bar" id="main-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo and Brand Name -->
+<a aria-label="Toothwise Home" class="flex items-center gap-3 group" href="#home">
+<div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#0B1B3A] to-[#2CB5C9] flex items-center justify-center text-white shadow-md shadow-cyan-900/10 transition-transform group-hover:scale-105">
+<i class="fa-solid fa-tooth text-2xl text-[#2CB5C9] drop-shadow-sm"></i>
+</div>
+<div>
+<span class="text-xl font-extrabold tracking-tight text-[#0B1B3A] block leading-none">
+              TOOTH<span class="text-[#2CB5C9]">WISE</span>
+</span>
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mt-1">by Dr Osama Razzaq</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+<a class="hover:text-[#2CB5C9] transition-colors py-1" href="#home">Home</a>
+<a class="hover:text-[#2CB5C9] transition-colors py-1" href="#about">About Doctor</a>
+<a class="hover:text-[#2CB5C9] transition-colors py-1" href="#services">Treatments</a>
+<a class="hover:text-[#2CB5C9] transition-colors flex items-center gap-1.5 py-1" href="#baby-teeth">
+<span class="w-2 h-2 rounded-full bg-[#2CB5C9] animate-pulse"></span>
+            Baby Teeth Care
+          </a>
+<a class="hover:text-[#2CB5C9] transition-colors py-1" href="#tips">Tips &amp; Reels</a>
+<a class="hover:text-[#2CB5C9] transition-colors py-1" href="#contact">Contact</a>
+</nav>
+<!-- Header Actions: Quick Call Badge & CTA Button -->
+<div class="hidden sm:flex items-center gap-4">
+<a class="flex items-center gap-2 text-xs md:text-sm font-semibold text-[#0B1B3A] bg-slate-100 hover:bg-slate-200 py-2.5 px-4 rounded-full transition-all border border-slate-200" href="tel:03130056477">
+<i class="fa-solid fa-phone-volume text-[#2CB5C9]"></i>
+<span>0313 0056477</span>
+</a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-bold text-white bg-[#D7263D] hover:bg-[#B81E31] shadow-glow-red hover:shadow-lg transition-all duration-300" href="#appointment">
+<i class="fa-regular fa-calendar-check mr-2"></i>
+            Book Appointment
+          </a>
+</div>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Toggle Navigation Menu" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#2CB5C9]" id="mobile-menu-btn" type="button">
+<i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 transition-all duration-200" id="mobile-menu">
+<nav class="flex flex-col gap-3 font-medium text-slate-700">
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50" href="#home">Home</a>
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50" href="#about">About Dr Osama</a>
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50" href="#services">Services &amp; Treatments</a>
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50 flex items-center justify-between text-[#2CB5C9]" href="#baby-teeth">
+          Baby Teeth (Doodh Kay Dant) <i class="fa-solid fa-shield-halved text-xs"></i>
+</a>
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50" href="#tips">Oral Health Tips</a>
+<a class="mobile-nav-link py-2 px-3 rounded-lg hover:bg-slate-50" href="#contact">Location &amp; Timing</a>
+<div class="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
+<a class="w-full text-center py-2.5 text-sm font-bold text-[#0B1B3A] bg-slate-100 rounded-xl" href="tel:03130056477">
+<i class="fa-solid fa-phone mr-2 text-[#2CB5C9]"></i> 0313 0056477
+          </a>
+<a class="w-full text-center py-3 text-sm font-bold text-white bg-[#D7263D] rounded-xl shadow-glow-red" href="#appointment">
+            Book Appointment
+          </a>
+</div>
+</nav>
+</div>
+</header>
+<!-- END: StickyHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-white via-[#F8FAFC] to-[#F1F5F9]" id="home">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-[#2CB5C9]/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-96 h-96 bg-[#0B1B3A]/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Text Content -->
+<div class="lg:col-span-7 text-center lg:text-left space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-cyan-200/80 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider shadow-sm">
+<i class="fa-solid fa-circle-check text-[#2CB5C9]"></i>
+              Khanna Road, Rawalpindi
+            </div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0B1B3A] tracking-tight leading-[1.15]">
+              Dentistry Made <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2CB5C9] to-[#0B1B3A]">Simple.</span>
+</h1>
+<p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Gentle, honest, and high-standard dental care for your whole family. Transparent treatment plans with zero unnecessary procedures and a pain-free experience.
+            </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold text-white bg-[#D7263D] hover:bg-[#B81E31] shadow-glow-red hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5" href="#appointment">
+<i class="fa-regular fa-calendar-check text-lg"></i>
+                Book Appointment
+              </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold text-[#0B1B3A] bg-white hover:bg-slate-50 border-2 border-slate-200 hover:border-[#0B1B3A] shadow-sm transition-all duration-300" href="tel:03130056477">
+<i class="fa-solid fa-phone text-[#2CB5C9]"></i>
+                Call 0313 0056477
+              </a>
+</div>
+<!-- Trust Badges -->
+<div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4 text-center">
+<div class="p-2 sm:p-3 rounded-2xl bg-white border border-slate-100 shadow-sm">
+<i class="fa-solid fa-microscope text-[#2CB5C9] text-xl mb-1 block"></i>
+<span class="text-xs sm:text-sm font-bold text-[#0B1B3A] block">Modern Equipment</span>
+<span class="text-[11px] text-slate-400 hidden sm:inline">Advanced hygiene</span>
+</div>
+<div class="p-2 sm:p-3 rounded-2xl bg-white border border-slate-100 shadow-sm">
+<i class="fa-solid fa-hand-holding-heart text-[#2CB5C9] text-xl mb-1 block"></i>
+<span class="text-xs sm:text-sm font-bold text-[#0B1B3A] block">Gentle &amp; Painless</span>
+<span class="text-[11px] text-slate-400 hidden sm:inline">Zero dental anxiety</span>
+</div>
+<div class="p-2 sm:p-3 rounded-2xl bg-white border border-slate-100 shadow-sm">
+<i class="fa-solid fa-children text-[#2CB5C9] text-xl mb-1 block"></i>
+<span class="text-xs sm:text-sm font-bold text-[#0B1B3A] block">Kids &amp; Family</span>
+<span class="text-[11px] text-slate-400 hidden sm:inline">Pediatric focus</span>
+</div>
+</div>
+</div>
+<!-- Doctor Portrait Card -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-sm sm:max-w-md">
+<!-- Subtle decorative aura background -->
+<div class="absolute -inset-3 bg-gradient-to-r from-[#2CB5C9] to-[#0B1B3A] rounded-3xl opacity-20 blur-xl"></div>
+<div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+<div class="relative rounded-2xl overflow-hidden bg-slate-100 aspect-square">
+<img alt="Dr Osama Razzaq - Chief Dentist at Toothwise Rawalpindi" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" src="assets/dr-osama-portrait.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0B1B3A]/70 via-transparent to-transparent"></div>
+<!-- Bottom Doctor Designation Overlay -->
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold uppercase tracking-wider mb-1.5">
+<i class="fa-solid fa-award text-yellow-300"></i> Dental Surgeon &amp; Founder
+                    </span>
+<h2 class="text-xl sm:text-2xl font-bold leading-tight">Dr Osama Razzaq</h2>
+<p class="text-xs sm:text-sm text-cyan-200 font-medium">BDS | Preventive &amp; Restorative Specialist</p>
+</div>
+</div>
+<!-- Floating Doctor Verified Badge -->
+<div class="mt-4 flex items-center justify-between p-3 bg-slate-50 rounded-2xl border border-slate-100">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+<i class="fa-solid fa-user-doctor"></i>
+</div>
+<div>
+<span class="text-xs text-slate-500 block leading-tight">Verified Practitioner</span>
+<span class="text-sm font-bold text-[#0B1B3A]">Toothwise Dental Clinic</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Available
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: QuickInfoBar -->
+<section class="relative z-20 -mt-6 sm:-mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-purpose="quick-clinic-credentials">
+<div class="bg-white rounded-3xl shadow-xl border border-slate-200/90 p-5 sm:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Info Item 1: Phone -->
+<a class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition-colors group" href="tel:03130056477">
+<div class="w-12 h-12 rounded-2xl bg-cyan-50 text-[#2CB5C9] group-hover:bg-[#2CB5C9] group-hover:text-white transition-all flex items-center justify-center shrink-0 text-xl shadow-sm">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Direct Call</h3>
+<p class="text-base font-extrabold text-[#0B1B3A] group-hover:text-[#2CB5C9] transition-colors mt-0.5">0313 0056477</p>
+<span class="text-xs text-slate-500">Instant phone booking</span>
+</div>
+</a>
+<!-- Info Item 2: Instagram/WhatsApp -->
+<a class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition-colors group" href="https://instagram.com/toothwise1" rel="noopener noreferrer" target="_blank">
+<div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-all flex items-center justify-center shrink-0 text-xl shadow-sm">
+<i class="fa-brands fa-instagram"></i>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Social Consult</h3>
+<p class="text-base font-extrabold text-[#0B1B3A] group-hover:text-rose-500 transition-colors mt-0.5">@toothwise1</p>
+<span class="text-xs text-slate-500">DM on IG &amp; WhatsApp</span>
+</div>
+</a>
+<!-- Info Item 3: Location -->
+<a class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition-colors group" href="https://maps.google.com/?q=2+Khanna+Rd+Rawalpindi+Pakistan" rel="noopener noreferrer" target="_blank">
+<div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all flex items-center justify-center shrink-0 text-xl shadow-sm">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Clinic Address</h3>
+<p class="text-sm font-extrabold text-[#0B1B3A] leading-snug mt-0.5">2 Khanna Rd, Rawalpindi</p>
+<span class="text-xs text-slate-500">Postcode 46000, Punjab</span>
+</div>
+</a>
+<!-- Info Item 4: Timings -->
+<div class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-xl shadow-sm">
+<i class="fa-regular fa-clock"></i>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Clinic Hours</h3>
+<p class="text-sm font-extrabold text-[#0B1B3A] mt-0.5">3:00 PM – 9:00 PM</p>
+<span class="text-xs text-slate-500 font-medium text-emerald-700">Mon - Sat (Fri By Appt)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuickInfoBar -->
+<!-- BEGIN: AboutDoctorSection -->
+<section class="py-20 lg:py-28 bg-white" data-purpose="about-dr-osama-razzaq" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Image column with decorative elements -->
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative mx-auto max-w-md">
+<div class="absolute -top-6 -left-6 w-40 h-40 bg-[#2CB5C9]/15 rounded-full filter blur-2xl"></div>
+<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#0B1B3A]/10 rounded-full filter blur-2xl"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100">
+<img alt="Doctor Osama Razzaq in navy suit" class="w-full h-auto object-cover" src="assets/dr-osama-portrait.jpg"/>
+</div>
+<!-- Quote card overlaid -->
+<div class="absolute -bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-200">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#0B1B3A] text-[#2CB5C9] flex items-center justify-center text-lg shrink-0">
+<i class="fa-solid fa-quote-left"></i>
+</div>
+<p class="text-xs italic text-slate-700 font-medium leading-relaxed">
+                    "My mission is making dental care stress-free and transparent for families in Rawalpindi."
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Bio and Mission Text -->
+<div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+<i class="fa-solid fa-stethoscope"></i> Meet Your Doctor
+            </div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+              Dr Osama Razzaq <br/>
+<span class="text-2xl sm:text-3xl font-semibold text-[#2CB5C9]">Demystifying Dentistry for Every Patient</span>
+</h2>
+<div class="text-slate-600 space-y-4 text-base leading-relaxed">
+<p>
+                Welcome to <strong>Toothwise</strong>. Dr Osama Razzaq is a dental professional committed to patient education, compassionate treatment, and gentle clinical execution. At Toothwise, we believe the best dental procedure is one where the patient is completely comfortable, fully informed, and confident in the outcome.
+              </p>
+<p>
+                With special emphasis on <strong>preventive dentistry</strong>, <strong>pediatric baby teeth care (Doodh Kay Dant)</strong>, and painless restorative procedures, Dr Osama ensures each consultation takes the time to listen, explain X-rays clearly, and offer honest guidance without hidden fees or fear.
+              </p>
+</div>
+<!-- Doctor Highlights / Stats Grid -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+<span class="block text-2xl sm:text-3xl font-extrabold text-[#0B1B3A]">1,500+</span>
+<span class="text-xs font-semibold text-slate-500 mt-1 block">Happy Smiles</span>
+</div>
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+<span class="block text-2xl sm:text-3xl font-extrabold text-[#2CB5C9]">100%</span>
+<span class="text-xs font-semibold text-slate-500 mt-1 block">Sterilization Standard</span>
+</div>
+<div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+<span class="block text-2xl sm:text-3xl font-extrabold text-[#D7263D]">4.9★</span>
+<span class="text-xs font-semibold text-slate-500 mt-1 block">Patient Rating</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 text-sm font-bold text-[#0B1B3A] hover:text-[#2CB5C9] transition-colors group" href="#appointment">
+<span>Book your personal consultation with Dr Osama</span>
+<i class="fa-solid fa-arrow-right-long group-hover:translate-x-1.5 transition-transform"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutDoctorSection -->
+<!-- BEGIN: ServicesSection -->
+<section class="py-20 bg-[#F8FAFC]" data-purpose="dental-treatments-services" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-100/60 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+            Clinical Care
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+            Comprehensive Dental Services
+          </h2>
+<p class="text-slate-600 text-base">
+            From routine checkups and painless fillings to kids dental care and cosmetic smile enhancements, all performed with high sterility protocols.
+          </p>
+</div>
+<!-- 8 Service Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/clinic-instruments.jpg" alt="Dental instruments for checkups and scaling" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-hand-sparkles"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Preventive</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Checkups &amp; Scaling</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Detailed oral screening, ultrasonic tartar removal, and enamel polishing to avoid gum disease and bad breath.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Painless Ultrasonic</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/composite-filling.jpg" alt="Tooth-colored composite filling treatment" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Restoration</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Composite Fillings</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Tooth-colored composite fillings that restore decayed teeth naturally, seamlessly matching your shade.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Natural Tooth Shade</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/root-canal.jpg" alt="Root canal treatment close-up" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-heart-pulse"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Endodontics</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Root Canal Treatment</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Relieve deep toothache and preserve your natural tooth through modern rotary canal therapy done pain-free.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Save Natural Tooth</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/scaling-cleaning.jpg" alt="Professional dental cleaning" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-bone"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Oral Surgery</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Tooth &amp; Wisdom Extraction</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Gentle extractions for severely infected teeth or impacted wisdom teeth under efficient local anesthesia.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Minimal Discomfort</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/teeth-whitening.jpg" alt="Dental shade guide for whitening consultation" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Cosmetic</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Teeth Whitening</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Safe clinical bleaching treatments that remove stubborn stains caused by tea, coffee, and tobacco effectively.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Immediate Brightness</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/clear-aligners.jpg" alt="Clear dental aligner consultation" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-teeth-open"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Alignment</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Clear Aligners &amp; Braces</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Discrete transparent aligners and orthodontic consultations to straighten crooked teeth without metal wires.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Invisible Alignment</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 7 -->
+<div class="group bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+<img class="service-photo" src="assets/crowns-bridges.jpg" alt="Ceramic dental crowns and bridge restorations" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#2CB5C9] flex items-center justify-center text-2xl mb-5 group-hover:bg-[#2CB5C9] group-hover:text-white transition-all">
+<i class="fa-solid fa-crown"></i>
+</div>
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider">Prosthodontics</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Crowns &amp; Fixed Bridges</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Zirconia and porcelain caps to strengthen cracked teeth and fill gaps for a natural chew and aesthetic look.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Durable Zirconia</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-[#2CB5C9]"></i>
+</div>
+</div>
+<!-- Service 8 -->
+<div class="group bg-white p-6 rounded-3xl border border-[#2CB5C9]/40 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between ring-1 ring-[#2CB5C9]/20">
+<img class="service-photo" src="assets/pediatric-care.jpg" alt="Gentle pediatric dental checkup" loading="lazy"/>
+<div>
+<div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-500 flex items-center justify-center text-2xl mb-5 group-hover:bg-rose-500 group-hover:text-white transition-all">
+<i class="fa-solid fa-baby"></i>
+</div>
+<span class="text-[11px] font-bold text-rose-500 uppercase tracking-wider">Pediatric Focus</span>
+<h3 class="text-lg font-bold text-[#0B1B3A] mt-1 mb-2">Kids Dental (Doodh Kay Dant)</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+                Gentle pulpotomy, cavity prevention, fluoride applications, and habitual counseling crafted specifically for toddlers and children.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1B3A]">
+<span>Fear-free Environment</span>
+<i class="fa-solid fa-chevron-right text-slate-300 group-hover:text-rose-500"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: BabyTeethBanner -->
+<section class="py-16 sm:py-20 bg-gradient-to-br from-[#0B1B3A] via-[#0E234B] to-[#122D5F] text-white relative overflow-hidden" data-purpose="importance-of-doodh-kay-dant" id="baby-teeth">
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-[#2CB5C9]/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2CB5C9]/20 border border-[#2CB5C9]/40 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+<i class="fa-solid fa-shield-cat"></i> Focus Topic by Dr Osama
+            </div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+              Importance of <span class="text-[#2CB5C9]">"Doodh Kay Dant"</span>
+<span class="block text-2xl sm:text-3xl font-light text-slate-200 mt-1">Healthy Baby Teeth, Healthy Future</span>
+</h2>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+              Many parents think milk teeth are temporary and do not require care. In reality, early loss of baby teeth leads to severe crookedness in permanent teeth, speech issues, and nutritional struggles.
+            </p>
+<!-- 4 Essential Points -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="flex items-start gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl">
+<i class="fa-solid fa-route text-[#2CB5C9] text-lg mt-0.5"></i>
+<div>
+<h3 class="text-sm font-bold text-white">Guides Adult Teeth</h3>
+<p class="text-xs text-slate-300">They act as space maintainers for permanent teeth to emerge correctly.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl">
+<i class="fa-solid fa-apple-whole text-[#2CB5C9] text-lg mt-0.5"></i>
+<div>
+<h3 class="text-sm font-bold text-white">Chewing &amp; Nutrition</h3>
+<p class="text-xs text-slate-300">Cavities cause pain, leading children to avoid wholesome chewing foods.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl">
+<i class="fa-solid fa-microphone-lines text-[#2CB5C9] text-lg mt-0.5"></i>
+<div>
+<h3 class="text-sm font-bold text-white">Speech Clarity</h3>
+<p class="text-xs text-slate-300">Front teeth play a vital role in proper tongue positioning for speech.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl">
+<i class="fa-solid fa-calendar-check text-[#2CB5C9] text-lg mt-0.5"></i>
+<div>
+<h3 class="text-sm font-bold text-white">First Visit by Age 1</h3>
+<p class="text-xs text-slate-300">Catch tooth decay and bottle rot before it requires complex treatment.</p>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2CB5C9] hover:bg-[#1E8E9F] text-[#0B1B3A] hover:text-white font-extrabold text-sm transition-all shadow-lg" href="#appointment">
+<i class="fa-solid fa-child"></i> Book a Kid-Friendly Checkup
+              </a>
+</div>
+</div>
+<!-- Mini reel showcase card inspired by the screenshot -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-xs sm:max-w-sm bg-slate-900 border-2 border-[#2CB5C9]/40 rounded-3xl p-5 shadow-2xl relative">
+<div class="flex items-center justify-between pb-3 border-b border-slate-800">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-[#2CB5C9] flex items-center justify-center text-xs text-[#0B1B3A] font-bold">
+<i class="fa-solid fa-tooth"></i>
+</div>
+<span class="text-xs font-bold tracking-wide">Toothwise Reels Series</span>
+</div>
+<span class="text-[11px] text-[#2CB5C9] font-bold uppercase">Awareness</span>
+</div>
+<div class="mt-4 rounded-2xl bg-slate-800/80 p-5 text-center border border-slate-700/60">
+<div class="w-16 h-16 rounded-full bg-[#2CB5C9]/20 text-[#2CB5C9] mx-auto flex items-center justify-center text-3xl mb-3">
+<i class="fa-solid fa-tooth"></i>
+</div>
+<p class="text-xs font-bold text-cyan-300 tracking-wider uppercase">Sehatmand Doodh Kay Dant</p>
+<h4 class="text-lg font-black text-white mt-1">Roshan Mustaqbil</h4>
+<p class="text-xs text-slate-400 mt-2">
+                  "Don't ignore black spots on baby teeth thinking they'll just fall off."
+                </p>
+<div class="mt-5 pt-3 border-t border-slate-700/50 flex items-center justify-around text-xs text-slate-400">
+<span><i class="fa-solid fa-heart text-rose-500 mr-1"></i> Awareness</span>
+<span><i class="fa-solid fa-shield-virus text-[#2CB5C9] mr-1"></i> Prevention</span>
+</div>
+</div>
+<div class="mt-4 text-center">
+<a class="text-xs font-bold text-cyan-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors" href="https://instagram.com/toothwise1" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram text-sm"></i> Watch Dr Osama's Video on Instagram
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: BabyTeethBanner -->
+<!-- BEGIN: OralHealthTipsInstagram -->
+<section class="py-20 bg-white" data-purpose="instagram-tips-feed" id="tips">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div class="max-w-2xl space-y-2">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-50 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+              Education &amp; Reels
+            </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+              Oral Health Tips by Dr Osama
+            </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+              Follow our daily bite-sized dental advice, video walkthroughs, and clinic updates on social media.
+            </p>
+</div>
+<div class="mt-5 md:mt-0">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold text-white insta-gradient shadow-md hover:opacity-90 transition-opacity" href="https://instagram.com/toothwise1" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram text-lg"></i> Follow @toothwise1
+            </a>
+</div>
+</div>
+<!-- Instagram Feed Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Tip 1 -->
+<div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+<div class="p-4 border-b border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0B1B3A] text-white flex items-center justify-center text-xs font-bold">
+                  TO
+                </div>
+<div>
+<h3 class="text-xs font-bold text-[#0B1B3A] leading-tight">toothwise1</h3>
+<span class="text-[10px] text-slate-400">Rawalpindi, Pakistan</span>
+</div>
+</div>
+<i class="fa-brands fa-instagram text-slate-400"></i>
+</div>
+<img class="tip-photo" src="assets/tip-baby-teeth.svg" alt="Oral health education illustration" loading="lazy"/>
+<img class="tip-photo" src="assets/tip-brushing.svg" alt="Oral health education illustration" loading="lazy"/>
+<img class="tip-photo" src="assets/tip-warning-signs.svg" alt="Oral health education illustration" loading="lazy"/>
+<img class="tip-photo" src="assets/tip-hygiene.svg" alt="Oral health education illustration" loading="lazy"/>
+<div class="p-5 bg-gradient-to-br from-cyan-50 to-slate-50 flex-1 flex flex-col justify-center">
+<span class="text-[11px] font-bold text-[#2CB5C9] uppercase tracking-wider mb-2">Reel Highlight</span>
+<h4 class="text-base font-bold text-[#0B1B3A] leading-snug">
+                "Why baby teeth matter more than you think"
+              </h4>
+<p class="text-xs text-slate-500 mt-2">
+                Understanding root resorption, space preservation, and when to bring your baby for their first visit.
+              </p>
+</div>
+<div class="p-4 border-t border-slate-100 bg-white">
+<div class="flex items-center justify-between text-xs text-slate-500">
+<span class="flex items-center gap-1.5"><i class="fa-regular fa-heart text-rose-500"></i> 142 Likes</span>
+<span class="font-bold text-[#2CB5C9]">Watch Reel</span>
+</div>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+<div class="p-4 border-b border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0B1B3A] text-white flex items-center justify-center text-xs font-bold">
+                  TO
+                </div>
+<div>
+<h3 class="text-xs font-bold text-[#0B1B3A] leading-tight">toothwise1</h3>
+<span class="text-[10px] text-slate-400">Rawalpindi, Pakistan</span>
+</div>
+</div>
+<i class="fa-brands fa-instagram text-slate-400"></i>
+</div>
+<div class="p-5 bg-gradient-to-br from-indigo-50 to-slate-50 flex-1 flex flex-col justify-center">
+<span class="text-[11px] font-bold text-indigo-600 uppercase tracking-wider mb-2">Quick Guide</span>
+<h4 class="text-base font-bold text-[#0B1B3A] leading-snug">
+                "Proper brushing technique under 2 minutes"
+              </h4>
+<p class="text-xs text-slate-500 mt-2">
+                Circular 45-degree angled strokes vs vigorous scrubbing that causes gum recession and sensitive teeth.
+              </p>
+</div>
+<div class="p-4 border-t border-slate-100 bg-white">
+<div class="flex items-center justify-between text-xs text-slate-500">
+<span class="flex items-center gap-1.5"><i class="fa-regular fa-heart text-rose-500"></i> 98 Likes</span>
+<span class="font-bold text-[#2CB5C9]">Read Post</span>
+</div>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+<div class="p-4 border-b border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0B1B3A] text-white flex items-center justify-center text-xs font-bold">
+                  TO
+                </div>
+<div>
+<h3 class="text-xs font-bold text-[#0B1B3A] leading-tight">toothwise1</h3>
+<span class="text-[10px] text-slate-400">Rawalpindi, Pakistan</span>
+</div>
+</div>
+<i class="fa-brands fa-instagram text-slate-400"></i>
+</div>
+<div class="p-5 bg-gradient-to-br from-amber-50 to-slate-50 flex-1 flex flex-col justify-center">
+<span class="text-[11px] font-bold text-amber-600 uppercase tracking-wider mb-2">Early Warning</span>
+<h4 class="text-base font-bold text-[#0B1B3A] leading-snug">
+                "Signs you need a checkup before pain starts"
+              </h4>
+<p class="text-xs text-slate-500 mt-2">
+                Food packing between teeth, slight cold sensitivity, and bleeding gums when flossing are warning signs.
+              </p>
+</div>
+<div class="p-4 border-t border-slate-100 bg-white">
+<div class="flex items-center justify-between text-xs text-slate-500">
+<span class="flex items-center gap-1.5"><i class="fa-regular fa-heart text-rose-500"></i> 184 Likes</span>
+<span class="font-bold text-[#2CB5C9]">Watch Video</span>
+</div>
+</div>
+</div>
+<!-- Tip 4 -->
+<div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+<div class="p-4 border-b border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0B1B3A] text-white flex items-center justify-center text-xs font-bold">
+                  TO
+                </div>
+<div>
+<h3 class="text-xs font-bold text-[#0B1B3A] leading-tight">toothwise1</h3>
+<span class="text-[10px] text-slate-400">Rawalpindi, Pakistan</span>
+</div>
+</div>
+<i class="fa-brands fa-instagram text-slate-400"></i>
+</div>
+<div class="p-5 bg-gradient-to-br from-emerald-50 to-slate-50 flex-1 flex flex-col justify-center">
+<span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider mb-2">Clinic Tour</span>
+<h4 class="text-base font-bold text-[#0B1B3A] leading-snug">
+                "Our Sterilization &amp; Hygiene Protocol"
+              </h4>
+<p class="text-xs text-slate-500 mt-2">
+                Autoclave pouches opened directly in front of you. Safe, hospital-grade dental care on Khanna Road.
+              </p>
+</div>
+<div class="p-4 border-t border-slate-100 bg-white">
+<div class="flex items-center justify-between text-xs text-slate-500">
+<span class="flex items-center gap-1.5"><i class="fa-regular fa-heart text-rose-500"></i> 220 Likes</span>
+<span class="font-bold text-[#2CB5C9]">View Tour</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: OralHealthTipsInstagram -->
+<!-- BEGIN: HowItWorksSection -->
+<section class="py-20 bg-slate-50 border-y border-slate-200" data-purpose="how-it-works-timeline">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-100/60 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+            Patient Journey
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+            How Simple Dental Care Works
+          </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            Visiting a dentist shouldn't feel stressful. We keep your visit seamless and predictable in three simple steps.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm relative text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-2xl bg-[#0B1B3A] text-[#2CB5C9] flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+              01
+            </div>
+<h3 class="text-xl font-bold text-[#0B1B3A] mb-3">Book Instantly</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+              Reach out via Call at <strong>0313 0056477</strong>, drop a WhatsApp/Instagram DM, or complete the quick online form for your preferred slot.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm relative text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-2xl bg-[#2CB5C9] text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+              02
+            </div>
+<h3 class="text-xl font-bold text-[#0B1B3A] mb-3">Gentle Consultation</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+              Visit our clean clinic at 2 Khanna Rd. Dr Osama conducts a thorough exam, shows you the problem clearly, and answers every question.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm relative text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-2xl bg-[#D7263D] text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+              03
+            </div>
+<h3 class="text-xl font-bold text-[#0B1B3A] mb-3">Smile with Confidence</h3>
+<p class="text-sm text-slate-500 leading-relaxed">
+              Undergo painless treatment with transparent pricing. Walk away with clear aftercare instructions and lasting oral comfort.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowItWorksSection -->
+<!-- BEGIN: WhyChooseUsSection -->
+<section class="py-20 bg-white" data-purpose="why-choose-toothwise">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-100/60 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+            Our Standard
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+            Why Patients Choose Toothwise
+          </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            We are redefining the dental clinic experience in Rawalpindi with honesty, cleanliness, and human warmth.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Pillar 1 -->
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 text-center hover:bg-white hover:shadow-lg transition-all">
+<div class="w-12 h-12 rounded-2xl bg-cyan-100 text-[#2CB5C9] mx-auto flex items-center justify-center text-xl mb-4">
+<i class="fa-solid fa-pump-soap"></i>
+</div>
+<h3 class="text-base font-bold text-[#0B1B3A] mb-2">Hospital Sterility</h3>
+<p class="text-xs text-slate-500 leading-relaxed">
+              Autoclaved instruments sealed in front of you for guaranteed zero cross-contamination.
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 text-center hover:bg-white hover:shadow-lg transition-all">
+<div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 mx-auto flex items-center justify-center text-xl mb-4">
+<i class="fa-solid fa-couch"></i>
+</div>
+<h3 class="text-base font-bold text-[#0B1B3A] mb-2">Modern Chairs</h3>
+<p class="text-xs text-slate-500 leading-relaxed">
+              Ergonomic dental chair setups ensuring relaxation and posture support during longer sessions.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 text-center hover:bg-white hover:shadow-lg transition-all">
+<div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center text-xl mb-4">
+<i class="fa-solid fa-comments"></i>
+</div>
+<h3 class="text-base font-bold text-[#0B1B3A] mb-2">No Jargon</h3>
+<p class="text-xs text-slate-500 leading-relaxed">
+              Simple everyday Urdu and English explanations of the problem, so you know exactly what is happening.
+            </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 text-center hover:bg-white hover:shadow-lg transition-all">
+<div class="w-12 h-12 rounded-2xl bg-rose-100 text-[#D7263D] mx-auto flex items-center justify-center text-xl mb-4">
+<i class="fa-solid fa-hand-holding-dollar"></i>
+</div>
+<h3 class="text-base font-bold text-[#0B1B3A] mb-2">Fair Pricing</h3>
+<p class="text-xs text-slate-500 leading-relaxed">
+              Affordable family-first pricing without hidden costs or unnecessary expensive procedures.
+            </p>
+</div>
+<!-- Pillar 5 -->
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 text-center hover:bg-white hover:shadow-lg transition-all">
+<div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 mx-auto flex items-center justify-center text-xl mb-4">
+<i class="fa-solid fa-face-smile"></i>
+</div>
+<h3 class="text-base font-bold text-[#0B1B3A] mb-2">Painless Touch</h3>
+<p class="text-xs text-slate-500 leading-relaxed">
+              Gentle numbing and patient-centered pacing to eliminate needle fears and dental phobias.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhyChooseUsSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-20 bg-slate-50 border-t border-slate-200" data-purpose="patient-reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-100/60 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+            Patient Stories
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+            Verified Words From Our Patients
+          </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            Real feedback from residents in Rawalpindi who chose Dr Osama Razzaq for their dental care.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 gap-1 text-sm mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed italic">
+                "I was terrified of getting a root canal after a bad previous experience elsewhere. Dr Osama explained every step calmly and I felt zero pain throughout the procedure. Truly commendable care!"
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+<div class="w-10 h-10 rounded-full bg-[#0B1B3A] text-white flex items-center justify-center font-bold text-sm">
+                MK
+              </div>
+<div>
+<h3 class="text-sm font-bold text-[#0B1B3A]">Mohammad Kashif</h3>
+<span class="text-xs text-slate-400">Rawalpindi Resident</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 gap-1 text-sm mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed italic">
+                "Brought my 5-year-old son who was terrified of doctors. Dr. Osama was extremely patient with him and gave great advice about milk teeth. My son left the clinic smiling with no tears."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+<div class="w-10 h-10 rounded-full bg-[#2CB5C9] text-white flex items-center justify-center font-bold text-sm">
+                AN
+              </div>
+<div>
+<h3 class="text-sm font-bold text-[#0B1B3A]">Amina Noreen</h3>
+<span class="text-xs text-slate-400">Mother of 2, Khanna Rd</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 gap-1 text-sm mb-4">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed italic">
+                "Had ultrasonic scaling and composite filling done. The hygiene standards of the clinic are spotless. Very reasonable rates compared to other commercial clinics in the twin cities."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-100">
+<div class="w-10 h-10 rounded-full bg-[#D7263D] text-white flex items-center justify-center font-bold text-sm">
+                TH
+              </div>
+<div>
+<h3 class="text-sm font-bold text-[#0B1B3A]">Tariq Habib</h3>
+<span class="text-xs text-slate-400">Verified Patient</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: FAQSection -->
+<section class="py-20 bg-white" data-purpose="frequently-asked-questions">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center space-y-3 mb-14">
+<span class="inline-block px-3 py-1 rounded-full bg-cyan-100/60 text-[#1E8E9F] text-xs font-bold uppercase tracking-wider">
+            Common Inquiries
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0B1B3A] tracking-tight">
+            Frequently Asked Questions
+          </h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            Quick answers regarding consultations, baby teeth, timings, and procedures.
+          </p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full px-6 py-4 text-left font-bold text-[#0B1B3A] flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+<span>Is dental scaling and cleaning painful?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+</button>
+<div class="faq-content hidden px-6 py-4 text-sm text-slate-600 border-t border-slate-100 bg-white leading-relaxed">
+              No. Ultrasonic scaling gently vibrates away calculus and plaque using water cooling. You may feel a slight tingling sensation or mild cold sensitivity if you have heavy tartar buildup, but it is not painful and does not damage your tooth enamel.
+            </div>
+</div>
+<!-- FAQ 2 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full px-6 py-4 text-left font-bold text-[#0B1B3A] flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+<span>Why should we treat baby teeth if they are going to fall out anyway?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+</button>
+<div class="faq-content hidden px-6 py-4 text-sm text-slate-600 border-t border-slate-100 bg-white leading-relaxed">
+              Baby teeth (Doodh Kay Dant) hold the vital bone space needed for adult teeth to erupt properly. If they decay and are extracted prematurely, adjacent teeth drift into the gap, causing permanent teeth to come out crooked or impacted. They are also crucial for speech and nutrition.
+            </div>
+</div>
+<!-- FAQ 3 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full px-6 py-4 text-left font-bold text-[#0B1B3A] flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+<span>What are the clinic timings and days?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+</button>
+<div class="faq-content hidden px-6 py-4 text-sm text-slate-600 border-t border-slate-100 bg-white leading-relaxed">
+              Toothwise is open Monday to Saturday from <strong>3:00 PM to 9:00 PM</strong>. Friday evenings are reserved primarily for pre-scheduled appointments and priority procedures.
+            </div>
+</div>
+<!-- FAQ 4 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full px-6 py-4 text-left font-bold text-[#0B1B3A] flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+<span>Do I need to book in advance or can I walk in?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+</button>
+<div class="faq-content hidden px-6 py-4 text-sm text-slate-600 border-t border-slate-100 bg-white leading-relaxed">
+              While we accommodate emergency walk-ins, we strongly recommend calling <strong>0313 0056477</strong> or booking online so you avoid waiting and Dr Osama can dedicate uninterrupted time to your diagnosis.
+            </div>
+</div>
+<!-- FAQ 5 -->
+<div class="border border-slate-200 rounded-2xl overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full px-6 py-4 text-left font-bold text-[#0B1B3A] flex justify-between items-center bg-slate-50/50 hover:bg-slate-50">
+<span>Where exactly is the clinic located on Khanna Road?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-sm transition-transform duration-200"></i>
+</button>
+<div class="faq-content hidden px-6 py-4 text-sm text-slate-600 border-t border-slate-100 bg-white leading-relaxed">
+              We are situated at <strong>2 Khanna Rd, Rawalpindi, Punjab 46000</strong>. It is easily accessible with convenient street parking. You can tap our map section below for direct turn-by-turn Google Maps navigation.
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: AppointmentAndLocationSection -->
+<section class="py-20 bg-slate-50 border-t border-slate-200" data-purpose="booking-and-location" id="appointment">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Booking Request Form (Left Column) -->
+<div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md">
+<div class="space-y-2 mb-8">
+<span class="inline-block px-3 py-1 rounded-full bg-rose-50 text-[#D7263D] text-xs font-bold uppercase tracking-wider">
+                Direct Clinic Slot
+              </span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#0B1B3A] tracking-tight">
+                Schedule Your Consultation
+              </h2>
+<p class="text-slate-500 text-sm">
+                Fill this brief form and our team will confirm your slot via call or WhatsApp.
+              </p>
+</div>
+<form class="space-y-5" id="appointment-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="full-name">Full Name *</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#2CB5C9] focus:ring-2 focus:ring-[#2CB5C9]/20 text-sm" id="full-name" placeholder="e.g. Usman Ahmed" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="phone-number">Phone Number *</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#2CB5C9] focus:ring-2 focus:ring-[#2CB5C9]/20 text-sm" id="phone-number" placeholder="e.g. 0313 0056477" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="service-type">Treatment / Concern</label>
+<select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#2CB5C9] focus:ring-2 focus:ring-[#2CB5C9]/20 text-sm text-slate-700" id="service-type">
+<option value="checkup">Dental Checkup &amp; Scaling</option>
+<option value="kids">Kids Dentistry (Doodh Kay Dant)</option>
+<option value="filling">Cavity Filling / Restoration</option>
+<option value="rootcanal">Toothache / Root Canal</option>
+<option value="extraction">Tooth Extraction</option>
+<option value="whitening">Teeth Whitening</option>
+<option value="aligners">Braces / Aligners Consultation</option>
+<option value="other">Other Inquiry</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="preferred-date">Preferred Date</label>
+<input class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#2CB5C9] focus:ring-2 focus:ring-[#2CB5C9]/20 text-sm text-slate-700" id="preferred-date" type="date"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="message">Notes or Symptoms (Optional)</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#2CB5C9] focus:ring-2 focus:ring-[#2CB5C9]/20 text-sm" id="message" placeholder="Tell us if you have any toothache, sensitivity, or previous treatment details..." rows="3"></textarea>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-bold text-white bg-[#D7263D] hover:bg-[#B81E31] shadow-glow-red transition-all" type="submit">
+                  Submit Appointment Request
+                </button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all" href="https://wa.me/923130056477" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp text-lg"></i> Book on WhatsApp
+                </a>
+</div>
+<p id="form-status" class="text-sm text-emerald-700 mt-3" role="status" aria-live="polite"></p>\n</form>
+</div>
+<!-- Clinic Location & Contact Card (Right Column) -->
+<div class="lg:col-span-5 space-y-6" id="contact">
+<div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-md space-y-6">
+<div>
+<span class="text-xs font-bold text-[#2CB5C9] uppercase tracking-wider block">Visit Our Clinic</span>
+<h3 class="text-2xl font-extrabold text-[#0B1B3A] mt-1">Toothwise Dental Clinic</h3>
+<p class="text-sm text-slate-500 mt-1">Khanna Road, Rawalpindi, Pakistan</p>
+</div>
+<!-- Map Placeholder snippet styling derived from user image 2 map representation -->
+<div class="rounded-2xl border border-slate-200 overflow-hidden relative bg-slate-100 aspect-video flex flex-col items-center justify-center p-6 text-center">
+<div class="w-12 h-12 rounded-full bg-rose-100 text-[#D7263D] flex items-center justify-center text-xl mb-2 shadow-sm animate-bounce">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<h4 class="text-sm font-bold text-[#0B1B3A]">2 Khanna Rd, Rawalpindi</h4>
+<p class="text-xs text-slate-500 mt-1">Near Al-Falah Bakers &amp; Sadiqabad Axis</p>
+<a class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#0B1B3A] hover:bg-[#2CB5C9] transition-colors shadow-sm" href="https://maps.google.com/?q=2+Khanna+Rd+Rawalpindi+Pakistan" rel="noopener noreferrer" target="_blank">
+<i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+                </a>
+</div>
+<!-- Contact & Timings List -->
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-slate-100 text-[#0B1B3A] flex items-center justify-center shrink-0">
+<i class="fa-solid fa-map-pin"></i>
+</div>
+<div>
+<span class="text-xs font-bold text-slate-400 block uppercase">Address</span>
+<span class="text-sm font-semibold text-slate-700">2 Khanna Rd, Rawalpindi, Punjab 46000</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-slate-100 text-[#0B1B3A] flex items-center justify-center shrink-0">
+<i class="fa-solid fa-clock"></i>
+</div>
+<div>
+<span class="text-xs font-bold text-slate-400 block uppercase">Timings</span>
+<span class="text-sm font-semibold text-slate-700">Mon - Sat: 3:00 PM – 9:00 PM (Friday By Appt)</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-slate-100 text-[#0B1B3A] flex items-center justify-center shrink-0">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<span class="text-xs font-bold text-slate-400 block uppercase">Call &amp; WhatsApp</span>
+<span class="text-sm font-semibold text-slate-700">0313 0056477</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AppointmentAndLocationSection -->
+</main>
+<!-- BEGIN: MobileStickyBottomBar -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden shadow-2xl flex items-center justify-between gap-3" data-purpose="mobile-sticky-quick-action">
+<a class="flex-1 py-3 px-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-[#0B1B3A] font-bold text-xs flex items-center justify-center gap-2 border border-slate-200" href="tel:03130056477">
+<i class="fa-solid fa-phone text-[#2CB5C9]"></i>
+<span>Call Now</span>
+</a>
+<a class="flex-1 py-3 px-3 rounded-2xl bg-[#D7263D] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-glow-red" href="#appointment">
+<i class="fa-regular fa-calendar-check"></i>
+<span>Book Slot</span>
+</a>
+<a aria-label="Chat on WhatsApp" class="w-12 h-11 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-lg shrink-0" href="https://wa.me/923130056477" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+</aside>
+<!-- END: MobileStickyBottomBar -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#0B1B3A] text-white pt-16 pb-12 border-t border-slate-800" data-purpose="page-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+<!-- Brand Info -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-[#2CB5C9] flex items-center justify-center text-white">
+<i class="fa-solid fa-tooth text-xl"></i>
+</div>
+<div>
+<span class="text-xl font-extrabold tracking-tight text-white block leading-none">
+                TOOTH<span class="text-[#2CB5C9]">WISE</span>
+</span>
+<span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mt-1">by Dr Osama Razzaq</span>
+</div>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Dentistry made simple. Gentle, honest, and high-quality oral healthcare on Khanna Road, Rawalpindi. Committed to patient comfort, dental education, and radiant smiles.
+          </p>
+<div class="flex items-center gap-3 pt-2">
+<a aria-label="Toothwise Instagram" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#2CB5C9] hover:text-[#0B1B3A] flex items-center justify-center text-slate-300 transition-all" href="https://instagram.com/toothwise1" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="Toothwise WhatsApp" class="w-10 h-10 rounded-full bg-white/10 hover:bg-emerald-500 hover:text-white flex items-center justify-center text-slate-300 transition-all" href="https://wa.me/923130056477" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<a aria-label="Toothwise Direct Call" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#D7263D] hover:text-white flex items-center justify-center text-slate-300 transition-all" href="tel:03130056477">
+<i class="fa-solid fa-phone"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-300">Quick Links</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#home">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#about">About Dr Osama</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Clinical Services</a></li>
+<li><a class="hover:text-white transition-colors" href="#baby-teeth">Baby Teeth Care</a></li>
+<li><a class="hover:text-white transition-colors" href="#tips">Oral Health Tips</a></li>
+</ul>
+</div>
+<!-- Treatments -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-300">Treatments</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#services">Teeth Cleaning &amp; Scaling</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Composite Fillings</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Painless Root Canal</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Tooth Extraction</a></li>
+<li><a class="hover:text-white transition-colors" href="#baby-teeth">Kids Dentistry</a></li>
+</ul>
+</div>
+<!-- Contact Detail -->
+<div class="space-y-3">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-300">Rawalpindi Clinic</h4>
+<p class="text-sm text-slate-400">
+            2 Khanna Rd, Rawalpindi,<br/>Pakistan, 46000
+          </p>
+<div class="text-sm text-slate-400 space-y-1 pt-1">
+<p><i class="fa-solid fa-phone text-[#2CB5C9] mr-2"></i> 0313 0056477</p>
+<p><i class="fa-regular fa-clock text-[#2CB5C9] mr-2"></i> 3:00 PM – 9:00 PM</p>
+</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<p>© 2026 Toothwise by Dr Osama Razzaq. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="hover:text-slate-400 transition-colors" href="#home">Privacy Policy</a>
+<a class="hover:text-slate-400 transition-colors" href="#home">Terms of Service</a>
+<a class="hover:text-slate-400 transition-colors" href="#home">Back to top ↑</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="mobile-menu-and-faq-toggle">
+    // Mobile navigation drawer toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        } else {
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        }
+      });
+
+      // Close mobile menu on link click
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        });
+      });
+    }
+
+    // FAQ Accordion interaction
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('i');
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+        // Close all other FAQs for clean single-view accordion
+        faqToggles.forEach(otherToggle => {
+          if (otherToggle !== toggle) {
+            otherToggle.setAttribute('aria-expanded', 'false');
+            otherToggle.nextElementSibling.classList.add('hidden');
+            const otherIcon = otherToggle.querySelector('i');
+            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        if (isExpanded) {
+          toggle.setAttribute('aria-expanded', 'false');
+          content.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          toggle.setAttribute('aria-expanded', 'true');
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+<script src="script.js"></script>
+</body></html>
